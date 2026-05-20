@@ -9,7 +9,7 @@ const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 28 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, margin: "-10%" },
-  transition: { duration: 0.7, ease: "easeOut", delay },
+  transition: { duration: 0.7, ease: "easeOut" as const, delay },
 });
 
 export default function About() {

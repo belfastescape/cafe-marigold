@@ -25,7 +25,7 @@ export default function Area() {
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          transition={{ duration: 0.7, ease: "easeOut" as const }}
           className="area-head"
           style={{
             display: "grid",
@@ -86,7 +86,7 @@ export default function Area() {
                 transition={{
                   duration: 1.05,
                   ease: [0.2, 0.75, 0.25, 1],
-                  opacity: { duration: 0.7, ease: "easeOut" },
+                  opacity: { duration: 0.7, ease: "easeOut" as const },
                 }}
                 style={{ margin: 0, position: "relative" }}
               >

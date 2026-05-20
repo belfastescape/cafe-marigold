@@ -120,7 +120,7 @@ export default function Contact() {
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          transition={{ duration: 0.7, ease: "easeOut" as const }}
         >
           <span className="eyebrow" style={{ color: "var(--accent)" }}>
             {SITE.contact.eyebrow}
@@ -158,7 +158,7 @@ export default function Contact() {
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 0.7, ease: "easeOut", delay: 0.08 }}
+          transition={{ duration: 0.7, ease: "easeOut" as const, delay: 0.08 }}
           style={{
             background: "rgba(255,255,255,.04)",
             border: "1px solid rgba(255,255,255,.1)",

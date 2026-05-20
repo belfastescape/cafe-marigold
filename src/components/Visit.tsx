@@ -16,7 +16,7 @@ export default function Visit() {
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          transition={{ duration: 0.7, ease: "easeOut" as const }}
           style={{ textAlign: "center", marginBottom: 64 }}
         >
           <span className="eyebrow" style={{ justifyContent: "center" }}>
@@ -36,7 +36,7 @@ export default function Visit() {
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 0.7, ease: "easeOut", delay: 0.08 }}
+          transition={{ duration: 0.7, ease: "easeOut" as const, delay: 0.08 }}
           className="visit-grid"
         >
           {/* hours + address card */}

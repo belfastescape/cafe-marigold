@@ -18,7 +18,7 @@ export default function Menu() {
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          transition={{ duration: 0.7, ease: "easeOut" as const }}
           style={{ textAlign: "center", marginBottom: 80 }}
         >
           <span className="eyebrow" style={{ justifyContent: "center" }}>
@@ -66,7 +66,7 @@ export default function Menu() {
                 initial={{ opacity: 0, y: 28 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-10%" }}
-                transition={{ duration: 0.7, ease: "easeOut", delay }}
+                transition={{ duration: 0.7, ease: "easeOut" as const, delay }}
                 className="menu-card"
               >
                 <div
