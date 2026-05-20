@@ -85,6 +85,8 @@ export default function Hero() {
               fontSize: "clamp(48px, 7vw, 118px)",
               lineHeight: 0.95,
               color: "var(--accent-deep)",
+              WebkitTextStroke: "2px #000",
+              paintOrder: "stroke fill",
               display: "inline-block",
               transform: "translateY(0.04em) rotate(-2deg)",
               paddingBottom: "0.15em",
@@ -94,7 +96,23 @@ export default function Hero() {
           </span>
         </h1>
 
-        <p style={{ maxWidth: 560, marginTop: 32, fontSize: 18, color: "var(--ink-soft)" }}>
+        <p
+          style={{
+            maxWidth: 560,
+            marginTop: 32,
+            fontSize: 18,
+            color: hasVideo ? "#fff" : "var(--ink-soft)",
+            ...(hasVideo && {
+              padding: "16px 20px",
+              borderRadius: 12,
+              background: "color-mix(in oklab, var(--ink) 38%, transparent)",
+              backdropFilter: "blur(12px) saturate(140%)",
+              WebkitBackdropFilter: "blur(12px) saturate(140%)",
+              border: "1px solid color-mix(in oklab, #fff 20%, transparent)",
+              boxShadow: "0 8px 32px color-mix(in oklab, var(--ink) 15%, transparent)",
+            }),
+          }}
+        >
           {SITE.hero.sub}
         </p>
 
