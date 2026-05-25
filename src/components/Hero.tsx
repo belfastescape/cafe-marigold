@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { SITE } from "@/content/site";
 import HeroScene from "./HeroScene";
 import Divider from "./dividers";
@@ -20,15 +20,7 @@ function ArrowIcon() {
 }
 
 export default function Hero() {
-  const [hasVideo, setHasVideo] = useState(false);
-
-  useEffect(() => {
-    // Check if hero video exists; fall back to animated scene
-    const video = document.createElement("video");
-    video.src = "/hero-loop.mp4";
-    video.onloadedmetadata = () => setHasVideo(true);
-    video.onerror = () => setHasVideo(false);
-  }, []);
+  const [hasVideo, setHasVideo] = useState(true);
 
   return (
     <header
@@ -49,9 +41,9 @@ export default function Hero() {
             muted
             playsInline
             poster="/hero-poster.jpg"
+            onError={() => setHasVideo(false)}
             style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
           >
-            <source src="/hero-loop.webm" type="video/webm" />
             <source src="/hero-loop.mp4" type="video/mp4" />
           </video>
           <div style={{ position: "absolute", inset: 0, background: "color-mix(in oklab, var(--bg) 30%, transparent)" }} />
