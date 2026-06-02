@@ -12,15 +12,15 @@ export const SITE = {
 
   nav: [
     { label: "About", href: "#about" },
-    { label: "The Area", href: "#area" },
     { label: "Menu", href: "#menu" },
-    { label: "Visit", href: "#visit" },
+    { label: "Our Location", href: "#area" },
+    { label: "Opening Times", href: "#visit" },
   ] satisfies NavItem[],
 
   hero: {
     line1: "A pocket of sunshine",
     line2: "on the corner of the street.",
-    sub: "Plant-forward plates, slow coffee and the best banana bread you've had this year. Open from 7.30, every day.",
+    sub: "Slow coffee and the best banana bread you've had this year. Open from 7.30, every day.",
     cta: "See you soon",
   },
 
@@ -36,24 +36,24 @@ export const SITE = {
     sub: "We're tucked between a florist and a bookshop, two minutes from the river. Come early, stay late.",
     images: [
       {
-        src: "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=900&q=80&auto=format&fit=crop",
+        src: "/images/couple-cafe-coffee-date.webp",
         alt: "Sunlit cafe corner",
         caption: "Our corner, 8am",
       },
       {
-        src: "https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=900&q=80&auto=format&fit=crop",
+        src: "/images/flower-shop-display.webp",
         alt: "Flowers on a market stall",
-        caption: "Saturday market",
+        caption: "Florist next door",
       },
       {
-        src: "https://images.unsplash.com/photo-1519214605650-76a613ee3245?w=900&q=80&auto=format&fit=crop",
+        src: "/images/parisian-covered-arcade-passage.webp",
         alt: "Bookshop window",
-        caption: "Next door",
+        caption: "Across the road",
       },
       {
-        src: "https://images.unsplash.com/photo-1473625247510-8ceb1760943f?w=900&q=80&auto=format&fit=crop",
+        src: "/images/tropical-fruit-market-stall.webp",
         alt: "Quiet street with bicycles",
-        caption: "Two minutes home",
+        caption: "Saturday market",
       },
     ] satisfies AreaImage[],
   },
