@@ -129,7 +129,7 @@ export default function Area() {
       </div>
 
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 0 }}>
-        <Divider kind="wave" fill="var(--cream-card)" />
+        <Divider kind="wave" fill="var(--bg-deep)" />
       </div>
 
       <style>{`

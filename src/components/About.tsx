@@ -76,7 +76,7 @@ export default function About() {
       </div>
 
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 0 }}>
-        <Divider kind="wave" fill="var(--bg)" />
+        <Divider kind="wave" fill="var(--cream-card)" />
       </div>
     </section>
   );

@@ -1,8 +1,6 @@
 "use client";
 
-import { useState } from "react";
 import { SITE } from "@/content/site";
-import HeroScene from "./HeroScene";
 import Divider from "./dividers";
 
 function ArrowIcon() {
@@ -20,8 +18,6 @@ function ArrowIcon() {
 }
 
 export default function Hero() {
-  const [hasVideo, setHasVideo] = useState(true);
-
   return (
     <header
       id="top"
@@ -33,24 +29,17 @@ export default function Hero() {
         overflow: "hidden",
       }}
     >
-      {hasVideo ? (
-        <>
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster="/hero-poster.jpg"
-            onError={() => setHasVideo(false)}
-            style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
-          >
-            <source src="/hero-loop.mp4" type="video/mp4" />
-          </video>
-          <div style={{ position: "absolute", inset: 0, background: "color-mix(in oklab, var(--bg) 30%, transparent)" }} />
-        </>
-      ) : (
-        <HeroScene />
-      )}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        poster="/hero-poster.jpg"
+        style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+      >
+        <source src="/loop-hero-no-audio.mp4" type="video/mp4" />
+      </video>
+      <div style={{ position: "absolute", inset: 0, background: "color-mix(in oklab, var(--bg) 30%, transparent)" }} />
 
       <div
         className="container"
@@ -93,16 +82,14 @@ export default function Hero() {
             maxWidth: 560,
             marginTop: 32,
             fontSize: 18,
-            color: hasVideo ? "#fff" : "var(--ink-soft)",
-            ...(hasVideo && {
-              padding: "16px 20px",
-              borderRadius: 12,
-              background: "color-mix(in oklab, var(--ink) 38%, transparent)",
-              backdropFilter: "blur(12px) saturate(140%)",
-              WebkitBackdropFilter: "blur(12px) saturate(140%)",
-              border: "1px solid color-mix(in oklab, #fff 20%, transparent)",
-              boxShadow: "0 8px 32px color-mix(in oklab, var(--ink) 15%, transparent)",
-            }),
+            color: "#fff",
+            padding: "16px 20px",
+            borderRadius: 12,
+            background: "color-mix(in oklab, var(--ink) 38%, transparent)",
+            backdropFilter: "blur(12px) saturate(140%)",
+            WebkitBackdropFilter: "blur(12px) saturate(140%)",
+            border: "1px solid color-mix(in oklab, #fff 20%, transparent)",
+            boxShadow: "0 8px 32px color-mix(in oklab, var(--ink) 15%, transparent)",
           }}
         >
           {SITE.hero.sub}

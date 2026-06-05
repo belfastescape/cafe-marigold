@@ -144,12 +144,3 @@ a { color: inherit; text-decoration: none; }
   background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' preserveAspectRatio='none'><path d='M2 10 C 40 2, 80 14, 120 8 S 196 4, 198 8' stroke='%23e89c2b' stroke-width='3' fill='none' stroke-linecap='round'/></svg>") center/100% 100% no-repeat;
 }
 
-/* ── Reduced motion ─────────────────────────────────────────────────── */
-@media (prefers-reduced-motion: reduce) {
-  .hero-flower,
-  .hero-flower .flower,
-  .hero-coffee .steam path,
-  .petal {
-    animation: none !important;
-  }
-}

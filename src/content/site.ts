@@ -60,7 +60,7 @@ export const SITE = {
 
   menu: {
     eyebrow: "Six things we love",
-    title: "La Carte",
+    title: "Sample menu.",
     sub: "Small menu, made well. Changes with the season.",
     items: [
       {

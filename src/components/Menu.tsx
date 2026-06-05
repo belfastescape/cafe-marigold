@@ -40,7 +40,7 @@ export default function Menu() {
                 fontWeight: 600,
               }}
             >
-              just
+              Our
             </span>
             {SITE.menu.title}
           </h2>
@@ -137,7 +137,7 @@ export default function Menu() {
       </div>
 
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 0 }}>
-        <Divider kind="wave" fill="var(--bg-deep)" />
+        <Divider kind="wave" fill="var(--bg)" />
       </div>
 
       <style>{`
