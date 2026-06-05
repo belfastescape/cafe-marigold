@@ -104,7 +104,7 @@ export const SITE = {
 
   contact: {
     eyebrow: "Say hello",
-    title: "Reserve a table, ask us anything.",
+    title: "Book a table, or ask us anything.",
     sub: "We'll get back the same day. For groups of six or more, drop the date and we'll sort the rest.",
   },
 
