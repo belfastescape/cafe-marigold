@@ -116,14 +116,14 @@ export const SITE = {
       { day: "Saturday", time: "8.00 — 5.00" },
       { day: "Sunday", time: "8.30 — 3.00" },
     ] satisfies HourRow[],
-    address: ["[14 Marigold Lane]", "[Newtown, London E1 7QX]"],
+    address: ["[14 Marigold Lane]", "[Auckland 1010]"],
     phone: "[020 7946 0101]",
     email: "hello@cafemarigold.test",
     map: null as string | null,
   },
 
   footer: {
-    line: "Cafe Marigold · 14 Marigold Lane · est. 2023",
+    line: "Cafe Marigold · Auckland 1010 · est. 2023",
     copyright: "© 2026 Cafe Marigold. All sunny things welcome.",
   },
 } as const;

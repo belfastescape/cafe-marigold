@@ -116,7 +116,7 @@ export default function Menu() {
                         whiteSpace: "nowrap",
                       }}
                     >
-                      £{item.price}
+                      ${item.price}
                     </span>
                   </div>
                   <p
